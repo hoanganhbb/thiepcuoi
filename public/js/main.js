@@ -22,7 +22,7 @@ $(document).ready(function () {
     html2canvas(node, {
       backgroundColor: 'transparent',
     }).then(function (canvas) {
-      $('.image-wrapper')[0].addClass = 'd-none';
+      $('#image-wrapper').hide();
       const pngUrl = canvas.toDataURL('image/png');
       $('#image-placeholder').html(`<img src='${pngUrl}'>`);
     });
